@@ -15,6 +15,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
+TARGET_DISABLE_EPPE := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := true
+TARGET_EXCLUDES_AUDIOFX := true
+WITH_GMS := false
+TARGET_DISABLE_MATLOG := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi

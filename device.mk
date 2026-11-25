@@ -456,3 +456,9 @@ PRODUCT_COPY_FILES += \
 
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
+
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, device/xiaomi/garnet-miuicamera/device.mk)
+
+# V4A
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
